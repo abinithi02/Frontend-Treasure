@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Components - Frontend Treasure</title>
+    <title>Contact Us - Frontend Treasure</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="components.css" />
+    <link rel="stylesheet" href="contacts.css"/>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -22,10 +22,10 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="components.html">Components</a>
+                        <a class="nav-link" href="components.html">Components</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link active" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -33,39 +33,22 @@
     </nav>
 
     <div class="container mt-5">
-        <h1>Frontend Components</h1>
-        <p>Explore our collection of reusable frontend components.</p>
-        
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Button Component</h5>
-                        <p class="card-text">A simple button component for your UI.</p>
-                        <code>&lt;button class="btn btn-primary"&gt;Click Me&lt;/button&gt;</code>
-                    </div>
-                </div>
+        <h1>Contact Us</h1>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Component</h5>
-                        <p class="card-text">A responsive card component.</p>
-                        <code>&lt;div class="card"&gt;...</code>
-                    </div>
-                </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Navbar Component</h5>
-                        <p class="card-text">A basic navigation bar component.</p>
-                        <code>&lt;nav class="navbar"&gt;...</code>
-                    </div>
-                </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
             </div>
-            <!-- Add more components as needed -->
-        </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
     </div>
 
     <!-- Footer Section -->
